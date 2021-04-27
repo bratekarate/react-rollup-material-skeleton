@@ -1,0 +1,11 @@
+.button-container {
+    margin-bottom: 10px;
+    border:solid;
+    background-color: red;
+}
+
+.snd-container {
+    margin-top: 40px;
+    border: solid;
+    background-color: green;
+}

@@ -1,6 +1,7 @@
 import typescript from "rollup-plugin-typescript2";
 import babel from "@rollup/plugin-babel";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
+import postcss from 'rollup-plugin-postcss'
 import json from "@rollup/plugin-json";
 import commonjs from "@rollup/plugin-commonjs";
 import replace from "@rollup/plugin-replace";
@@ -59,6 +60,7 @@ const servePlugin = {
 };
 
 const plugins = [
+  postcss(),
   json({ preferConst: true, namedExports: false }),
   replace({
     "process.env.NODE_ENV": JSON.stringify("development"),

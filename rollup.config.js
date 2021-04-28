@@ -63,6 +63,7 @@ const plugins = [
   postcss(),
   json({ preferConst: true, namedExports: false }),
   replace({
+    preventAssignment: true,
     "process.env.NODE_ENV": JSON.stringify("development"),
   }),
   nodeResolve(),

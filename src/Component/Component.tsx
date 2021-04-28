@@ -27,7 +27,8 @@ const styles = (theme) => ({
   },
   content: {
     flexGrow: 1,
-    marginLeft: theme.spacing(9),
+    marginLeft: theme.spacing(7),
+    marginRight: theme.spacing(7),
     padding: theme.spacing(3),
     marginTop: theme.spacing(7),
     overflowX: "hidden",

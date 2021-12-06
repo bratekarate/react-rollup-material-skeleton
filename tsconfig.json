@@ -5,8 +5,11 @@
     "declaration": true,
     "declarationDir": "dist/types",
     "experimentalDecorators": true,
-    "jsx": "react",
-    "lib": ["dom", "es2017"],
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "es2017"
+    ],
     "moduleResolution": "node",
     "module": "esnext",
     "noUnusedLocals": true,
@@ -15,7 +18,24 @@
     "resolveJsonModule": true,
     "rootDir": "src",
     "target": "es2017",
-    "typeRoots": ["node_modules/@types", "custom_typings/"]
+    "typeRoots": [
+      "node_modules/@types",
+      "custom_typings/"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "incremental": true
   },
-  "include": ["src/**/*", "test/**/*"]
+  "include": [
+    "src/**/*",
+    "test/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Grid, Paper } from "@material-ui/core";
-import "./component.css";
 import {
   createMuiTheme,
   ThemeProvider,
